@@ -66,6 +66,15 @@ export function htmlReport(data, opts = {}) {
     "http_req_blocked",
     "iteration_duration",
     "group_duration",
+    "http_req_duration{scenario:facet_search}",
+    "http_req_duration_general_register_unregister_co{scenario:student_registration}",
+    "http_req_duration_verify{scenario:student_registration}",
+    "http_req_duration_course_submit{scenario:student_registration}",
+    "http_req_duration_general_register_unregister_co{scenario:summer_student_registration}",
+    "http_req_duration_verify{scenario:summer_student_registration}",
+    "http_req_duration_course_submit{scenario:summer_student_registration}",
+    "http_req_duration_general_academic_record",
+    "http_req_duration_general_cmco"
   ]
 
   const otherMetrics = [

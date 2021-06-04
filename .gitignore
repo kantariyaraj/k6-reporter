@@ -1,7 +1,1 @@
-*.html
-**/bin/
-*.csv
-reports/*
 node_modules/
-tests/*.json
-tests/*.html
