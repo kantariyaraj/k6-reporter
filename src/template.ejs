@@ -255,15 +255,19 @@
               <thead>     
                 <tr>
                   <th></th>
-                  <% for(valueName in metric.values) { %>
-                    <th><%= valueName %></th>
+		  <%
+			keys = Object.keys(metric.values) 
+			keys.sort()
+		  %>
+                  <% for (i = 0; i < keys.length; i++) { %>
+                    <th><%= keys[i] %></th>
                   <% } %>
                 </tr>
               </thead>
               <tr>
                 <td><b><%= metricName %></b></td>
-                <% for(valueName in metric.values) { %>
-                  <td><%= metric.values[valueName].toFixed(2) %></td>
+                <% for (i = 0; i < keys.length; i++) { k = keys[i] %>
+                  <td><%= metric.values[k].toFixed(2) %></td>
                 <% } %>
               </tr>
             </tbody>
