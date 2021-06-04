@@ -74,7 +74,8 @@ export function htmlReport(data, opts = {}) {
     "http_req_duration_verify{scenario:summer_student_registration}",
     "http_req_duration_course_submit{scenario:summer_student_registration}",
     "http_req_duration_general_academic_record",
-    "http_req_duration_general_cmco"
+    "http_req_duration_general_cmco",
+    "http_req_duration_general_facet_search",
   ]
 
   const otherMetrics = [
